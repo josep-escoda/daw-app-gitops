@@ -19,6 +19,6 @@ spec:
         - name: credencials-kube0
       containers:
         - name: webapp
-          image: kube0.lacetania.cat/grup1/webapp-daw:latest
+          image: kube0.lacetania.cat/grup1/webapp-daw:5fa055a
           ports:
             - containerPort: 80
