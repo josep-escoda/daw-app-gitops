@@ -2,11 +2,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-daw-svc
+  name: webapp-daw-service
+  namespace: grup1
 spec:
   type: ClusterIP
+  clusterIP: 10.96.1.101
   selector:
     app: webapp-daw
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 80
       targetPort: 80
